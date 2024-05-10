@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="relative max-h-full bottom-0 z-10 bg-white pb-0 pt-20 dark:bg-dark lg:pb-0 lg:pt-[120px]">
+      <footer className="relative mx-auto max-w-7xl bottom-0 z-10 bg-white pb-0 pt-20 dark:bg-dark lg:pb-0 lg:pt-[120px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
                 <a href="/#" className="mb-6 inline-block max-w-[160px]">

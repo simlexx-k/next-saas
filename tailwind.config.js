@@ -1,10 +1,14 @@
 // eslint-disable-next-line no-undef
+const flowbite = require("flowbite-react/tailwind");
+
+/** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
   darkMode: 'class',
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
     'node_modules/flowbite-react/lib/esm/**/*.js',
-
+    flowbite.content(),
   ],
   theme: {
     extend: {
@@ -63,5 +67,6 @@ module.exports = {
 plugins: [
   // eslint-disable-next-line no-undef
     require('flowbite/plugin'),
+    flowbite.plugin(),
   ],
 }

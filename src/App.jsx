@@ -1,25 +1,21 @@
 import './css/styles.css'
-import Hero from './components/hero'
-import Features from './components/features'
-import CTA from './components/CTA'
-import Pricing from './components/pricing'
-import About from './components/about'
-import Testimonials from './components/testimonials'
-import LogoBanners from './components/logo-banners'
-import Footer from './components/footer'
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Home from "./pages/home.jsx";
+import Login from './pages/auth/login'
+import Register from './pages/auth/register'
+
 function App() {
   return (
     <div className="App">
-      <Hero/>
-      <Features/>
-        <CTA/>
-        <Pricing/>
-        <About/>
-        <Testimonials/>
-        <LogoBanners/>
-        <Footer/>
-    </div>
+        <Router>
+            <Routes>
+                <Route path="/" exact element={<Home/>} />
+                <Route path="/auth/login" exact element={<Login/>}/>
+                <Route path="/auth/register" component={Register}/>
+            </Routes>
+        </Router>
 
+    </div>
   );
   // return ();
 }

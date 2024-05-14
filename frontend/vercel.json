@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "missing": [
+        {
+          "type": "cookie",
+          "key": "auth_token"
+        }
+      ],
+      "destination": "/auth/login"
+    }
+  ]
+}
